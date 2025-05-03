@@ -1,0 +1,86 @@
+/* src/Coursesfolder/AppCourse.css */
+
+.course-container {
+    padding: 80px 20px;
+    background: #f0f4f8;
+    min-height: 80vh;
+    animation: fadeIn 1s ease;
+  }
+  
+  .course-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  
+  .course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .course-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .course-title {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin: 20px 0 10px;
+    padding: 0 15px;
+  }
+  
+  .course-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 0 15px 20px;
+  }
+  
+  .enroll-btn {
+    background: #3498db;
+    color: white;
+    padding: 12px 25px;
+    margin: 0 auto 20px;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .enroll-btn:hover {
+    background: #2980b9;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

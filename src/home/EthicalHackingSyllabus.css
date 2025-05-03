@@ -1,0 +1,152 @@
+/* General Section Styles */
+.about-us-section {
+    padding: 80px 0;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  /* Aligns content to the top */
+    gap: 30px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Left side image container */
+  .image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .image-item img {
+    width: 249.2;
+    height: 186.9px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    animation: slideInLeft 1s ease-out;
+  }
+  
+  /* Right side text content */
+  .text-content {
+    flex: 2;
+    animation: fadeInRight 1s ease-out;
+  }
+  
+  .section-title {
+    margin-bottom: 20px;
+  }
+  
+  .section-title .subtitle {
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .syllabus-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .syllabus-list li {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .action-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .action-btn:hover {
+    background: linear-gradient(90deg, #0056b3, #003f7f);
+  }
+
+  .p1{
+    color:black
+  }
+  .p2{
+    color:black
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .image-container {
+      flex: 1;
+      justify-content: center;
+    }
+  
+    .text-content {
+      flex: 1;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
